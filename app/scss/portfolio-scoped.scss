@@ -216,10 +216,20 @@
   height: 100%;
   border-right: 1px solid var(--bg-black-50);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
   z-index: 10;
   transition: all 0.3s ease-in-out;
+}
+
+.portfolio-container .sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 0;
 }
 
 .portfolio-container .aside .logo {
@@ -358,6 +368,8 @@
   padding: 0 15px;
   border-top: 1px solid var(--bg-black-50);
   padding-top: 20px;
+  background: var(--bg-black-100);
+  z-index: 1;
 }
 
 .portfolio-container .theme-mode-toggle {
@@ -401,17 +413,19 @@
   display: flex;
   gap: 10px;
   padding: 0 15px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
 .portfolio-container .color-circle {
-  width: 35px;
-  height: 35px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   cursor: pointer;
   border: 3px solid transparent;
   transition: all 0.3s ease;
   position: relative;
+  flex-shrink: 0;
 }
 
 .portfolio-container .color-circle:hover {
@@ -1382,6 +1396,13 @@
   
   .portfolio-container .aside {
     left: -270px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .portfolio-container .sidebar-content {
+    justify-content: flex-start;
+    padding-top: 80px;
   }
   
   .portfolio-container .aside .nav-toggler {
@@ -1397,16 +1418,33 @@
     left: 300px;
   }
   
+  .portfolio-container .aside .logo {
+    position: relative;
+    top: 0;
+    margin-bottom: 30px;
+    flex-shrink: 0;
+  }
+  
+  .portfolio-container .aside .nav {
+    margin-top: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+  }
+  
   /* Sidebar Theme Settings - Mobile */
   .portfolio-container .sidebar-theme-settings {
     position: relative;
     bottom: auto;
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: auto;
+    padding: 20px 15px;
+    padding-bottom: 30px;
+    flex-shrink: 0;
   }
   
   .portfolio-container .theme-mode-toggle {
     padding: 10px 12px;
+    margin-bottom: 15px;
   }
   
   .portfolio-container .theme-mode-toggle i {
@@ -1417,9 +1455,23 @@
     font-size: 13px;
   }
   
+  .portfolio-container .theme-colors-section h4 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-container .color-options {
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  
   .portfolio-container .color-circle {
     width: 32px;
     height: 32px;
+  }
+  
+  .portfolio-container .color-circle.active::after {
+    font-size: 12px;
   }
   
   .portfolio-container .section {
@@ -1752,6 +1804,47 @@
   .portfolio-container .stat-item h4 {
     font-size: 2rem;
   }
+  
+  /* Sidebar Theme Settings - Small Mobile */
+  .portfolio-container .sidebar-theme-settings {
+    padding: 15px 10px;
+    margin-top: 20px;
+  }
+  
+  .portfolio-container .theme-mode-toggle {
+    padding: 10px;
+    margin-bottom: 12px;
+    gap: 10px;
+  }
+  
+  .portfolio-container .theme-mode-toggle i {
+    font-size: 14px;
+  }
+  
+  .portfolio-container .theme-mode-toggle span {
+    font-size: 12px;
+  }
+  
+  .portfolio-container .theme-colors-section h4 {
+    font-size: 12px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+  }
+  
+  .portfolio-container .color-options {
+    gap: 6px;
+    padding: 0 10px;
+  }
+  
+  .portfolio-container .color-circle {
+    width: 28px;
+    height: 28px;
+    border-width: 2px;
+  }
+  
+  .portfolio-container .color-circle.active::after {
+    font-size: 10px;
+  }
 }
 
 /* Extra Small Devices (320px - 480px) */
@@ -2014,6 +2107,47 @@
   
   .portfolio-container .focus-area-item {
     font-size: 11px;
+  }
+  
+  /* Sidebar Theme Settings - Extra Small Mobile */
+  .portfolio-container .sidebar-theme-settings {
+    padding: 12px 8px;
+    margin-top: 15px;
+  }
+  
+  .portfolio-container .theme-mode-toggle {
+    padding: 8px;
+    margin-bottom: 10px;
+    gap: 8px;
+  }
+  
+  .portfolio-container .theme-mode-toggle i {
+    font-size: 13px;
+  }
+  
+  .portfolio-container .theme-mode-toggle span {
+    font-size: 11px;
+  }
+  
+  .portfolio-container .theme-colors-section h4 {
+    font-size: 11px;
+    margin-bottom: 6px;
+    padding-left: 8px;
+  }
+  
+  .portfolio-container .color-options {
+    gap: 5px;
+    padding: 0 8px;
+  }
+  
+  .portfolio-container .color-circle {
+    width: 26px;
+    height: 26px;
+    border-width: 2px;
+  }
+  
+  .portfolio-container .color-circle.active::after {
+    font-size: 9px;
   }
 }
 

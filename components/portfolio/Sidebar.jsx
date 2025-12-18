@@ -36,13 +36,6 @@ const Sidebar = () => {
     <>
       {/* Sidebar */}
       <div className={`aside ${isMobileMenuOpen ? "open" : ""}`}>
-        {/* Logo */}
-        <div className="logo">
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            <span>ZAV</span>i
-          </a>
-        </div>
-
         {/* Mobile Navigation Toggler */}
         <div 
           className={`nav-toggler ${isMobileMenuOpen ? "open" : ""}`}
@@ -51,24 +44,34 @@ const Sidebar = () => {
           <span></span>
         </div>
 
-        {/* Navigation Menu */}
-        <ul className="nav">
-          {navigationItems.map((item) => (
-            <li key={item.id}>
-              <a
-                href={`#${item.id}`}
-                className={activeSection === item.id ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigateToSection(item.id);
-                }}
-              >
-                <i className={`fa ${item.icon}`}></i>
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        {/* Sidebar Content Wrapper */}
+        <div className="sidebar-content">
+          {/* Logo */}
+          <div className="logo">
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              <span>ZAV</span>i
+            </a>
+          </div>
+
+          {/* Navigation Menu */}
+          <ul className="nav">
+            {navigationItems.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className={activeSection === item.id ? "active" : ""}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigateToSection(item.id);
+                  }}
+                >
+                  <i className={`fa ${item.icon}`}></i>
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {/* Theme Settings in Sidebar */}
         <div className="sidebar-theme-settings">
