@@ -3881,6 +3881,38 @@
     font-size: 18px;
     margin: 0;
   }
+  
+  /* Page Description Responsive */
+  .portfolio-container .page-header-content {
+    padding: 0 10px;
+  }
+  
+  .portfolio-container .page-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* Small Mobile - Below 480px */
+@media (max-width: 480px) {
+  .portfolio-container .section-title-with-buttons h2 {
+    font-size: 26px;
+  }
+  
+  .portfolio-container .hire-me-btn,
+  .portfolio-container .download-cv-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .portfolio-container .hire-me-btn i,
+  .portfolio-container .download-cv-btn i {
+    font-size: 16px;
+  }
+  
+  .portfolio-container .page-description {
+    font-size: 13px;
+  }
 }
 
 /* ===== New About Page Design ===== */
@@ -4741,6 +4773,520 @@
   .portfolio-container .cta-button {
     padding: 12px 30px;
     font-size: 15px;
+  }
+}
+
+/* ===== SERVICES PAGE RESPONSIVE ===== */
+
+/* Tablet - 768px to 991px */
+@media (max-width: 991px) {
+  .portfolio-container .service .service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 25px;
+  }
+  
+  .portfolio-container .service .service-item-inner {
+    padding: 25px 18px;
+  }
+  
+  .portfolio-container .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .portfolio-container .service-icon i {
+    font-size: 28px;
+  }
+  
+  .portfolio-container .service-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .portfolio-container .service-description {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .portfolio-container .tech-heading,
+  .portfolio-container .deliverables-heading {
+    font-size: 12px;
+  }
+  
+  .portfolio-container .service-technologies .tech-tag {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  
+  .portfolio-container .deliverables-list li {
+    font-size: 12px;
+  }
+}
+
+/* Mobile - Below 768px */
+@media (max-width: 767px) {
+  .portfolio-container .service .service-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-container .service .service-item-inner {
+    padding: 20px 15px;
+  }
+  
+  .portfolio-container .service-icon {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .portfolio-container .service-icon i {
+    font-size: 24px;
+  }
+  
+  .portfolio-container .service-title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-container .service-description {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .portfolio-container .service-technologies,
+  .portfolio-container .service-deliverables {
+    padding-top: 12px;
+  }
+  
+  .portfolio-container .tech-heading,
+  .portfolio-container .deliverables-heading {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+  
+  .portfolio-container .service-technologies .tech-tags {
+    gap: 5px;
+  }
+  
+  .portfolio-container .service-technologies .tech-tag {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  
+  .portfolio-container .deliverables-list li {
+    font-size: 12px;
+    padding: 5px 0 5px 18px;
+  }
+  
+  .portfolio-container .deliverables-list li:before {
+    font-size: 12px;
+  }
+}
+
+/* Small Mobile - Below 480px */
+@media (max-width: 480px) {
+  .portfolio-container .service .service-item-inner {
+    padding: 18px 12px;
+  }
+  
+  .portfolio-container .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .portfolio-container .service-icon i {
+    font-size: 22px;
+  }
+  
+  .portfolio-container .service-title {
+    font-size: 16px;
+  }
+  
+  .portfolio-container .service-description {
+    font-size: 12px;
+  }
+  
+  .portfolio-container .deliverables-list li {
+    font-size: 11px;
+  }
+}
+
+/* ===== SKILLS PAGE RESPONSIVE ===== */
+
+/* Tablet - 768px to 991px */
+@media (max-width: 991px) {
+  .portfolio-container .skills-categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .portfolio-container .skill-category-card {
+    padding: 25px 20px;
+  }
+  
+  .portfolio-container .category-icon {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .portfolio-container .category-icon i {
+    font-size: 26px;
+  }
+  
+  .portfolio-container .category-title {
+    font-size: 18px;
+  }
+  
+  .portfolio-container .skill-tag {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+/* Mobile - Below 768px */
+@media (max-width: 767px) {
+  .portfolio-container .skills-categories-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .portfolio-container .skill-category-card {
+    padding: 20px 15px;
+  }
+  
+  .portfolio-container .category-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .portfolio-container .category-icon i {
+    font-size: 24px;
+  }
+  
+  .portfolio-container .category-title {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+  
+  .portfolio-container .skills-tags {
+    gap: 8px;
+  }
+  
+  .portfolio-container .skill-tag {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+/* Small Mobile - Below 480px */
+@media (max-width: 480px) {
+  .portfolio-container .skill-category-card {
+    padding: 18px 12px;
+  }
+  
+  .portfolio-container .category-icon {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .portfolio-container .category-icon i {
+    font-size: 22px;
+  }
+  
+  .portfolio-container .category-title {
+    font-size: 16px;
+  }
+  
+  .portfolio-container .skill-tag {
+    font-size: 10px;
+    padding: 5px 9px;
+  }
+}
+
+/* ===== PROJECTS PAGE RESPONSIVE ===== */
+
+/* Tablet - 768px to 991px */
+@media (max-width: 991px) {
+  .portfolio-container .portfolio-filter {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .portfolio-container .portfolio-filter button {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+  
+  .portfolio-container .portfolio-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 25px;
+  }
+  
+  .portfolio-container .portfolio-item-inner {
+    padding: 15px;
+  }
+  
+  .portfolio-container .portfolio-img img {
+    height: 220px;
+  }
+  
+  .portfolio-container .portfolio-info h4 {
+    font-size: 17px;
+  }
+  
+  .portfolio-container .portfolio-info p {
+    font-size: 13px;
+  }
+  
+  .portfolio-container .portfolio-tech-stack {
+    gap: 6px;
+  }
+  
+  .portfolio-container .tech-badge {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  
+  .portfolio-container .portfolio-links {
+    gap: 8px;
+  }
+  
+  .portfolio-container .portfolio-link {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile - Below 768px */
+@media (max-width: 767px) {
+  .portfolio-container .portfolio-heading {
+    margin-bottom: 25px;
+  }
+  
+  .portfolio-container .portfolio-filter {
+    gap: 8px;
+    padding: 0 10px;
+  }
+  
+  .portfolio-container .portfolio-filter button {
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+  
+  .portfolio-container .portfolio-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-container .portfolio-item-inner {
+    padding: 12px;
+  }
+  
+  .portfolio-container .portfolio-img {
+    height: 200px;
+  }
+  
+  .portfolio-container .portfolio-img img {
+    height: 200px;
+  }
+  
+  .portfolio-container .portfolio-info {
+    padding: 15px;
+  }
+  
+  .portfolio-container .portfolio-info h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .portfolio-container .portfolio-info p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .portfolio-container .portfolio-tech-stack {
+    gap: 5px;
+    margin-bottom: 12px;
+  }
+  
+  .portfolio-container .tech-badge {
+    font-size: 9px;
+    padding: 4px 7px;
+  }
+  
+  .portfolio-container .portfolio-links {
+    gap: 8px;
+    flex-direction: column;
+  }
+  
+  .portfolio-container .portfolio-link {
+    padding: 10px 15px;
+    font-size: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Small Mobile - Below 480px */
+@media (max-width: 480px) {
+  .portfolio-container .portfolio-filter button {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+  
+  .portfolio-container .portfolio-item-inner {
+    padding: 10px;
+  }
+  
+  .portfolio-container .portfolio-img {
+    height: 180px;
+  }
+  
+  .portfolio-container .portfolio-img img {
+    height: 180px;
+  }
+  
+  .portfolio-container .portfolio-info {
+    padding: 12px;
+  }
+  
+  .portfolio-container .portfolio-info h4 {
+    font-size: 15px;
+  }
+  
+  .portfolio-container .portfolio-info p {
+    font-size: 11px;
+  }
+  
+  .portfolio-container .tech-badge {
+    font-size: 9px;
+    padding: 3px 6px;
+  }
+  
+  .portfolio-container .portfolio-link {
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+}
+
+/* ===== CONTACT PAGE RESPONSIVE ===== */
+
+/* Tablet - 768px to 991px */
+@media (max-width: 991px) {
+  .portfolio-container .contact .contact-info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 25px;
+  }
+  
+  .portfolio-container .contact .contact-info-item .icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .portfolio-container .contact .contact-info-item .icon i {
+    font-size: 22px;
+  }
+  
+  .portfolio-container .contact .contact-info-item h4 {
+    font-size: 16px;
+  }
+  
+  .portfolio-container .contact .contact-info-item p {
+    font-size: 14px;
+  }
+  
+  .portfolio-container .contact-form .form-header h3 {
+    font-size: 26px;
+  }
+  
+  .portfolio-container .contact-form .form-header p {
+    font-size: 14px;
+  }
+  
+  .portfolio-container .professional-links-section h3 {
+    font-size: 24px;
+  }
+  
+  .portfolio-container .professional-links-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Mobile - Already handled in previous responsive styles */
+
+/* Small Mobile - Below 480px */
+@media (max-width: 480px) {
+  .portfolio-container .contact .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .portfolio-container .contact .contact-info-item {
+    margin-bottom: 12px;
+  }
+  
+  .portfolio-container .contact .contact-info-item .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .portfolio-container .contact .contact-info-item .icon i {
+    font-size: 18px;
+  }
+  
+  .portfolio-container .contact .contact-info-item h4 {
+    font-size: 13px;
+  }
+  
+  .portfolio-container .contact .contact-info-item p {
+    font-size: 12px;
+  }
+  
+  .portfolio-container .contact-form .form-header h3 {
+    font-size: 20px;
+  }
+  
+  .portfolio-container .contact-form .form-header p {
+    font-size: 12px;
+  }
+  
+  .portfolio-container .contact-form .form-item {
+    margin-bottom: 15px;
+  }
+  
+  .portfolio-container .contact-form .form-item .form-control {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .portfolio-container .contact-form .btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+  
+  .portfolio-container .professional-links-section h3 {
+    font-size: 20px;
+  }
+  
+  .portfolio-container .professional-link-card {
+    padding: 12px;
+  }
+  
+  .portfolio-container .professional-link-card i,
+  .portfolio-container .professional-link-card .fiverr-icon {
+    font-size: 22px;
+  }
+  
+  .portfolio-container .professional-link-card span {
+    font-size: 12px;
   }
 }
 
