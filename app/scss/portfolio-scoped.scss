@@ -605,9 +605,9 @@
 .portfolio-container .home .home-img img {
   margin: auto;
   border-radius: 8px;
-  height: 450px;
+  height: 100%;
   width: 100%;
-  max-width: 450px;
+  max-width: 100%;
   display: block;
   object-fit: cover;
   position: relative;
@@ -950,7 +950,7 @@
 .portfolio-container .service-technologies .tech-tag {
   display: inline-block;
   padding: 5px 10px;
-  background: white;
+  background: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 4px;
   font-size: 11px;
@@ -2892,7 +2892,7 @@
 .portfolio-container .skill-tag {
   display: inline-block;
   padding: 6px 14px;
-  background: white;
+  background: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 5px;
   font-size: 13px;
@@ -3044,7 +3044,7 @@
 .portfolio-container .tech-tag {
   display: inline-block;
   padding: 4px 10px;
-  background: white;
+  background: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 4px;
   font-size: 11px;
@@ -3410,7 +3410,7 @@
 .portfolio-container .skill-item {
   display: inline-block;
   padding: 10px 18px;
-  background: white;
+  background: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 6px;
   font-size: 14px;
@@ -3588,7 +3588,7 @@
 
 .portfolio-container .project-tech .tech-badge {
   padding: 5px 12px;
-  background: white;
+  background: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 5px;
   font-size: 11px;
@@ -3770,7 +3770,7 @@
 .portfolio-container .form-input {
   width: 100%;
   padding: 15px 15px 15px 50px;
-  background: white;
+  background: var(--bg-black-100);
   border: 2px solid var(--bg-black-50);
   border-radius: 8px;
   font-size: 15px;
@@ -4209,7 +4209,7 @@
 }
 
 .portfolio-container .skill-category-box-new {
-  background: white;
+  background: var(--bg-black-100);
   padding: 30px;
   border-radius: 10px;
   border-top: 4px solid var(--skin-color);
@@ -4268,7 +4268,7 @@
 }
 
 .portfolio-container .experience-card-detailed {
-  background: white;
+  background: var(--bg-black-100);
   padding: 30px;
   border-radius: 8px;
   border-left: 4px solid var(--skin-color);
@@ -4435,7 +4435,7 @@
 }
 
 .portfolio-container .education-card-new {
-  background: white;
+  background: var(--bg-black-100);
   padding: 25px;
   border-radius: 8px;
   border-top: 4px solid var(--skin-color);

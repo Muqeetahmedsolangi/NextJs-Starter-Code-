@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://muqeetahmedportfolio.netlify.app/</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://muqeetahmedportfolio.netlify.app/assets/images/profile/muqeet-profile.jpg</image:loc>
+      <image:title>Muqeet Ahmed - Full Stack Developer</image:title>
+      <image:caption>Professional Full Stack Developer specializing in Node.js, React, and AWS</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- About Section -->
+  <url>
+    <loc>https://muqeetahmedportfolio.netlify.app/#about</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Services Section -->
+  <url>
+    <loc>https://muqeetahmedportfolio.netlify.app/#services</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Portfolio Section -->
+  <url>
+    <loc>https://muqeetahmedportfolio.netlify.app/#portfolio</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Skills Section -->
+  <url>
+    <loc>https://muqeetahmedportfolio.netlify.app/#skills</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://muqeetahmedportfolio.netlify.app/#contact</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Resume/CV -->
+  <url>
+    <loc>https://muqeetahmedportfolio.netlify.app/assets/resume/MUQEET%20AHMED%20FULL%20STACK%20WEB%20APP%20DEVELOPER-2.pdf</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
+

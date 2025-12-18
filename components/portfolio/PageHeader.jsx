@@ -22,9 +22,10 @@ const PageHeader = ({ title, description }) => {
               <span className="btn-text-short">Hire</span>
             </button>
             <a 
-              href="/assets/resume/Muqeet Ahmed Full Stack Resume (2).pdf" 
-              download
+              href="/assets/resume/MUQEET AHMED FULL STACK WEB APP DEVELOPER-2.pdf" 
+              download="Muqeet_Ahmed_Full_Stack_Developer_Resume.pdf"
               className="btn download-cv-btn"
+              aria-label="Download Muqeet Ahmed's Resume"
             >
               <i className="fa fa-download"></i>
               <span className="btn-text-full">Download CV</span>
