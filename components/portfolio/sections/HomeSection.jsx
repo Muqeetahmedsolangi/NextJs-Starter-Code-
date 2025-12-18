@@ -110,55 +110,59 @@ const HomeSection = () => {
             <div className="professional-links">
               <h4 className="links-title">Find Me On:</h4>
               <div className="links-grid">
-                <a 
-                  href="https://github.com/Muqeetahmedsolangi" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="profile-link"
-                  title="GitHub Profile"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  <span>GitHub</span>
-                </a>
+                <div className="links-row-wrapper">
+                  <a 
+                    href="https://github.com/Muqeetahmedsolangi" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="profile-link"
+                    title="GitHub Profile"
+                  >
+                    <i className="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a 
+                    href="https://www.fiverr.com/zaviial?public_mode=true" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="profile-link"
+                    title="Fiverr Profile"
+                  >
+                    <i className="fa-solid fa-f"></i>
+                    <span>Fiverr</span>
+                  </a>
+                </div>
+                <div className="links-row-wrapper">
+                  <a 
+                    href="https://www.upwork.com/freelancers/~0151e635a568d50da5" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="profile-link"
+                    title="Upwork Profile"
+                  >
+                    <i className="fa-solid fa-u"></i>
+                    <span>Upwork</span>
+                  </a>
+                  <a 
+                    href="https://stackoverflow.com/users/30508733/zavii" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="profile-link"
+                    title="Stack Overflow Profile"
+                  >
+                    <i className="fa-brands fa-stack-overflow"></i>
+                    <span>Stack Overflow</span>
+                  </a>
+                </div>
                 <a 
                   href="https://www.linkedin.com/in/muqeetahmed" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="profile-link"
+                  className="profile-link linkedin-link"
                   title="LinkedIn Profile"
                 >
                   <i className="fa-brands fa-linkedin"></i>
                   <span>LinkedIn</span>
-                </a>
-                <a 
-                  href="https://www.fiverr.com/zaviial?public_mode=true" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="profile-link"
-                  title="Fiverr Profile"
-                >
-                  <i className="fa-solid fa-f"></i>
-                  <span>Fiverr</span>
-                </a>
-                <a 
-                  href="https://www.upwork.com/freelancers/~0151e635a568d50da5" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="profile-link"
-                  title="Upwork Profile"
-                >
-                  <i className="fa-solid fa-u"></i>
-                  <span>Upwork</span>
-                </a>
-                <a 
-                  href="https://stackoverflow.com/users/30508733/zavii" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="profile-link"
-                  title="Stack Overflow Profile"
-                >
-                  <i className="fa-brands fa-stack-overflow"></i>
-                  <span>Stack Overflow</span>
                 </a>
               </div>
             </div>

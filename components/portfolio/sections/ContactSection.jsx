@@ -33,7 +33,7 @@ const ContactSection = () => {
     {
       icon: "fa-map-marker-alt",
       title: "Location",
-      value: "Karachi, Pakistan",
+      value: "Karachi",
       link: null
     }
   ];
@@ -96,61 +96,7 @@ const ContactSection = () => {
           ))}
         </div>
 
-        {/* Professional Links */}
-        <div className="row">
-          <div className="professional-links-section padd-15">
-            <h3 className="links-section-title">Connect With Me</h3>
-            <div className="professional-links-grid">
-              <a 
-                href="https://github.com/Muqeetahmedsolangi" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="professional-link-card"
-              >
-                <i className="fa-brands fa-github"></i>
-                <span>GitHub</span>
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/muqeetahmed" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="professional-link-card"
-              >
-                <i className="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-              </a>
-              <a 
-                href="https://www.fiverr.com/zaviial?public_mode=true" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="professional-link-card fiverr-card"
-              >
-                <span className="fiverr-icon">F</span>
-                <span>Fiverr</span>
-              </a>
-              <a 
-                href="https://www.upwork.com/freelancers/~0151e635a568d50da5" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="professional-link-card"
-              >
-                <i className="fa-brands fa-upwork"></i>
-                <span>Upwork</span>
-              </a>
-              <a 
-                href="https://stackoverflow.com/users/30508733/zavii" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="professional-link-card"
-              >
-                <i className="fa-brands fa-stack-overflow"></i>
-                <span>Stack Overflow</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Contact Form */}
+        {/* Contact Form - Moved to Top */}
         <div className="row">
           <div className="contact-form padd-15">
             <div className="form-header">
@@ -229,6 +175,60 @@ const ContactSection = () => {
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+
+        {/* Professional Links - Moved to Bottom */}
+        <div className="row">
+          <div className="professional-links-section padd-15">
+            <h3 className="links-section-title">Connect With Me</h3>
+            <div className="professional-links-grid">
+              <a 
+                href="https://github.com/Muqeetahmedsolangi" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="professional-link-card"
+              >
+                <i className="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/muqeetahmed" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="professional-link-card"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a 
+                href="https://www.fiverr.com/zaviial?public_mode=true" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="professional-link-card fiverr-card"
+              >
+                <span className="fiverr-icon">F</span>
+                <span>Fiverr</span>
+              </a>
+              <a 
+                href="https://www.upwork.com/freelancers/~0151e635a568d50da5" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="professional-link-card"
+              >
+                <i className="fa-brands fa-upwork"></i>
+                <span>Upwork</span>
+              </a>
+              <a 
+                href="https://stackoverflow.com/users/30508733/zavii" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="professional-link-card"
+              >
+                <i className="fa-brands fa-stack-overflow"></i>
+                <span>Stack Overflow</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

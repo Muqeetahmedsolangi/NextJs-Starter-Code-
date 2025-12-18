@@ -8,7 +8,11 @@ const Sidebar = () => {
     activeSection, 
     navigateToSection, 
     isMobileMenuOpen, 
-    setIsMobileMenuOpen 
+    setIsMobileMenuOpen,
+    activeColor,
+    setActiveColor,
+    isDarkMode,
+    setIsDarkMode
   } = usePortfolio();
 
   const navigationItems = [
@@ -18,6 +22,14 @@ const Sidebar = () => {
     { id: "portfolio", label: "Projects", icon: "fa-briefcase" },
     { id: "skills", label: "Skills", icon: "fa-code" },
     { id: "contact", label: "Contact", icon: "fa-comments" },
+  ];
+
+  const colorOptions = [
+    { id: "color-1", color: "#ec1839", name: "Red" },
+    { id: "color-2", color: "#fa5b0f", name: "Orange" },
+    { id: "color-3", color: "#37b182", name: "Green" },
+    { id: "color-4", color: "#1854b5", name: "Blue" },
+    { id: "color-5", color: "#f021b2", name: "Pink" },
   ];
 
   return (
@@ -57,6 +69,31 @@ const Sidebar = () => {
             </li>
           ))}
         </ul>
+
+        {/* Theme Settings in Sidebar */}
+        <div className="sidebar-theme-settings">
+          {/* Dark/Light Mode Toggle */}
+          <div className="theme-mode-toggle" onClick={setIsDarkMode}>
+            <i className={`fas ${isDarkMode ? "fa-sun" : "fa-moon"}`}></i>
+            <span>{isDarkMode ? "Light Mode" : "Dark Mode"}</span>
+          </div>
+
+          {/* Theme Colors */}
+          <div className="theme-colors-section">
+            <h4>Theme Colors</h4>
+            <div className="color-options">
+              {colorOptions.map((option) => (
+                <span
+                  key={option.id}
+                  className={`color-circle ${activeColor === option.id ? "active" : ""}`}
+                  style={{ backgroundColor: option.color }}
+                  onClick={() => setActiveColor(option.id)}
+                  title={option.name}
+                ></span>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

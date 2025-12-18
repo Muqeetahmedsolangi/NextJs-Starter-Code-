@@ -11,7 +11,7 @@ const AboutSection = () => {
   const personalInfoTop = [
     { label: "Name", value: "Muqeet Ahmed", icon: "fa-user" },
     { label: "Phone", value: "+92 308 3160159", icon: "fa-phone", link: "tel:+923083160159" },
-    { label: "Location", value: "Karachi, Pakistan", icon: "fa-map-marker-alt" },
+    { label: "Location", value: "Karachi", icon: "fa-map-marker-alt" },
     { label: "Experience", value: "3+ Years", icon: "fa-briefcase" }
   ];
 
@@ -53,7 +53,7 @@ const AboutSection = () => {
       title: "Full Stack Developer | Web & Mobile Applications",
       company: "TURINGOID",
       website: "www.turingoid.com",
-      location: "Karachi, Pakistan",
+      location: "Karachi",
       companyDescription: "Turingoid is a product-based technology company specializing in web and mobile application development for long-term enterprise clients, with strong focus on innovation, scalability, and cutting-edge software solutions.",
       responsibilities: [
         "Lead and mentor junior developers, conducting code reviews and providing technical guidance to enhance team productivity",
@@ -88,7 +88,7 @@ const AboutSection = () => {
       title: "MERN Stack Developer",
       company: "Digital Elliptical",
       website: "www.digitalelliptical.com",
-      location: "Karachi, Pakistan",
+      location: "Karachi",
       companyDescription: "Digital Elliptical Software service company specializing in enterprise-level SaaS products and large-scale management systems. Provides custom software development, system optimization, and digital transformation solutions for businesses across industries.",
       responsibilities: [
         "Developed responsive full-stack web applications with clean code architecture and optimized performance",
@@ -169,7 +169,7 @@ const AboutSection = () => {
               <span className="heading-underline"></span>
             </h3>
             
-            {/* Top Row - 4 Cards */}
+            {/* Top Row - 2×2 (Name, Phone, Location, Experience) */}
             <div className="info-cards-grid-top">
               {personalInfoTop.map((info, index) => (
                 <div key={index} className="info-card-new">
@@ -190,10 +190,10 @@ const AboutSection = () => {
               ))}
             </div>
 
-            {/* Bottom Row - 2 Cards */}
+            {/* Bottom Row - 1×1 (Email, Website - Full Width Each) */}
             <div className="info-cards-grid-bottom">
               {personalInfoBottom.map((info, index) => (
-                <div key={index} className="info-card-new">
+                <div key={index} className="info-card-new info-card-full">
                   <div className="info-icon-box">
                     <i className={`fa ${info.icon}`}></i>
                   </div>

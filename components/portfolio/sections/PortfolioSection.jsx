@@ -81,7 +81,7 @@ const PortfolioSection = () => {
       <div className="container">
         {/* Page Header with Buttons */}
         <PageHeader 
-          title="Projects I Built"
+          title="Projects"
           description="Showcasing my recent projects and professional work. Each project demonstrates my expertise in modern technologies and commitment to delivering high-quality solutions."
         />
         

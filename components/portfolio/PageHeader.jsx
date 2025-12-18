@@ -17,14 +17,18 @@ const PageHeader = ({ title, description }) => {
               className="btn hire-me-btn"
               onClick={() => navigateToSection("contact")}
             >
-              <i className="fa fa-paper-plane"></i> Hire Me
+              <i className="fa fa-paper-plane"></i>
+              <span className="btn-text-full">Hire Me</span>
+              <span className="btn-text-short">Hire</span>
             </button>
             <a 
               href="/assets/resume/Muqeet Ahmed Full Stack Resume (2).pdf" 
               download
               className="btn download-cv-btn"
             >
-              <i className="fa fa-download"></i> Download CV
+              <i className="fa fa-download"></i>
+              <span className="btn-text-full">Download CV</span>
+              <span className="btn-text-short">CV</span>
             </a>
           </div>
         </div>
